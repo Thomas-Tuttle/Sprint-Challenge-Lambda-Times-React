@@ -12,13 +12,13 @@ const TopBar = () => {
           <LeftLink>TOPICS</LeftLink>
           <LeftLink>SEARCH</LeftLink>
         </LeftNavContainer>
-        <CenterNavContainer>
-          <CenterLink>GENERAL</CenterLink>
-          <CenterLink>BROWNBAG</CenterLink>
-          <CenterLink>RANDOM</CenterLink>
-          <CenterLink>MUSIC</CenterLink>
-          <CenterLink>ANNOUNCEMENTS</CenterLink>
-        </CenterNavContainer>
+            <CenterNavContainer>
+              <CenterLink>GENERAL</CenterLink>
+              <CenterLink>BROWNBAG</CenterLink>
+              <CenterLink>RANDOM</CenterLink>
+              <CenterLink>MUSIC</CenterLink>
+              <CenterLink>ANNOUNCEMENTS</CenterLink>
+            </CenterNavContainer>
         <LogInContainer>
           <LogIn>LOG IN</LogIn>
         </LogInContainer>
