@@ -24,12 +24,14 @@ const HeaderContainer = styled.div`
   align-items: center;
   background-color: white;
   border: 2px solid lightgrey;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   box-shadow: 0px 0px 5px black;
-  margin-top: 45px;
+  margin-top: 0px;
   padding-bottom: 15px;
 
   @media (min-width: 1200px) {
-    width: 84%;
+    width: 85%;
   }
 `;
 
@@ -40,6 +42,7 @@ const Date = styled.h2`
   letter-spacing: 1.25px;
   margin-left: 25px;
   flex: 1;
+  font-family: 'PT Sans', sans-serif;
 `;
 
 const Title = styled.h1`
@@ -60,4 +63,5 @@ const Temp = styled.h2`
   text-align: right;
   margin-right: 25px;
   flex: 1;
+  font-family: 'PT Sans', sans-serif;
 `;

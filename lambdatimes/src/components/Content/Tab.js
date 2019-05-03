@@ -1,22 +1,55 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import styled, { css } from "styled-components";
+
+
 
 const Tab = props => {
-  /* Using your props, determine if the `tab` prop matches the `selectedTab` prop, 
-      if they match, the className should be: 'tab active-tab', 
-      if it is not it should just be 'tab'*/
+
   return (
-    <div
-      className={''}
+    <Tabs
+      tabSelected={props.tab === props.selectedTab && 'activeTab'}
       onClick={() => {
-        /* Replace this dummy click handler function with your selectTabHandler function from props 
-         you'll need to pass the `tab` in as an argument to this handler. */
+        props.selectTabHandler(props.tab);
       }}
     >
       {props.tab.toUpperCase()}
-    </div>
+    </Tabs>
   );
 };
 
-// Make sure you include PropTypes on your props.
+
+Tab.propTypes = {
+  selectTabHandler: PropTypes.func,
+  selectedTab: PropTypes.string,
+  tab: PropTypes.string,
+  'get key': PropTypes.func
+}
 
 export default Tab;
+
+const Tabs = styled.div`
+  margin: 0 10px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  letter-spacing: 1.25px;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {text-decoration: underline;}
+  
+
+  ${props =>
+    props.tabSelected === 'activeTab' && css`
+      background-color: black;
+      color: red;
+      border: 2px solid black;
+      box-shadow: 0px 0px 3px 1px red;
+    `}
+`;

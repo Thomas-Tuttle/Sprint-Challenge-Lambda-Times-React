@@ -33,7 +33,7 @@ export default TopBar;
 const Container = styled.div`
   width: 100%;
   height: 45px;
-  position: fixed;
+  position: relitive;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -65,6 +65,7 @@ const LeftLink = styled.h1`
   margin-right: 25%;
   font-weight: bold;
   font-size: 12px;
+  font-family: 'PT Sans', sans-serif;
 
   &:hover {
     color: red;
@@ -83,6 +84,7 @@ const CenterLink = styled.h1`
   cursor: pointer;
   margin: 2.5%;
   font-size: 8px;
+  font-family: 'PT Sans', sans-serif;
 
   &:hover {
     text-decoration: underline;
@@ -103,6 +105,7 @@ const LogIn = styled.h1`
   cursor: pointer;
   font-size: 12px;
   font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
 
   &:hover {
     color: red;

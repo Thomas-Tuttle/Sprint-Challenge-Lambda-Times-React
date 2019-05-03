@@ -17,6 +17,7 @@ const App = () => {
 export default App;
 
 const AppContainer = styled.div`
+  margin: -8px;
   min-height: 1000px;
   display: flex;
   flex-direction: column;
